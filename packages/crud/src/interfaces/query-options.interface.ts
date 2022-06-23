@@ -1,7 +1,4 @@
-import {
-  QueryFields,
-  QuerySort,
-} from '@dataui/crud-request/lib/types/request-query.types';
+import { QueryFields, QuerySort } from '@lab3dvlp/crud-request';
 
 import { QueryFilterOption } from '../types';
 
