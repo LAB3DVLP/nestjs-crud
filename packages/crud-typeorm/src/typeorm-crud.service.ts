@@ -32,7 +32,7 @@ import { oO } from '@zmotivat0r/o0';
 import { plainToInstance } from 'class-transformer';
 import {
   Brackets,
-  ConnectionOptions,
+  DataSourceOptions,
   DeepPartial,
   EntityMetadata,
   ObjectLiteral,
@@ -52,7 +52,7 @@ interface IAllowedRelation {
 }
 
 export class TypeOrmCrudService<T> extends CrudService<T, DeepPartial<T>> {
-  protected dbName: ConnectionOptions['type'];
+  protected dbName: DataSourceOptions['type'];
   protected entityColumns: string[];
   protected entityPrimaryColumns: string[];
   protected entityHasDeleteColumn: boolean = false;
