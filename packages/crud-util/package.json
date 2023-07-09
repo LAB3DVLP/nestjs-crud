@@ -37,5 +37,5 @@
   "scripts": {
     "build": "npx tsc -b"
   },
-  "gitHead": "49d091bdd0d300205f0bd94a2c82cc62c6c8dfb4"
+  "gitHead": "d6558967db3897a92802b3404530887bcb0eacaa"
 }
