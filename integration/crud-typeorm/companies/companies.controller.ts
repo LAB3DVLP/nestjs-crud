@@ -45,5 +45,5 @@ import { serialize } from './responses';
 @ApiTags('companies')
 @Controller('companies')
 export class CompaniesController {
-  constructor(public service: CompaniesService) {}
+  constructor(public repository: CompaniesService) {}
 }

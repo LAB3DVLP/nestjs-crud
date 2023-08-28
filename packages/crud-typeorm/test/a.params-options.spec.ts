@@ -46,7 +46,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('/companiesA/:companyId/users')
     class UsersController1 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -72,7 +72,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('/companiesB/:companyId/users')
     class UsersController2 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     beforeAll(async () => {

@@ -25,7 +25,7 @@ describe('#crud', () => {
     })
     @Controller('test')
     class TestController {
-      constructor(public service: TestService<TestModel>) {}
+      constructor(public repository: TestService<TestModel>) {}
     }
 
     beforeAll(async () => {

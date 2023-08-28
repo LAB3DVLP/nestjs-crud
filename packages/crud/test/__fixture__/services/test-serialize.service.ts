@@ -5,11 +5,11 @@ import {
   CrudRequest,
   GetManyDefaultResponse,
 } from '../../../src/interfaces';
-import { CrudService } from '../../../src/services';
+import { CrudRepository } from '../../../src/repositories';
 import { TestSerializeModel } from '../models';
 
 @Injectable()
-export class TestSerializeService<T = TestSerializeModel> extends CrudService<T> {
+export class TestSerializeService<T = TestSerializeModel> extends CrudRepository<T> {
   private store: T[] = [];
 
   constructor(private Model: Type<T>) {

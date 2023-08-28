@@ -45,7 +45,7 @@ describe('#crud', () => {
   })
   @Controller('test2')
   class Test2Controller {
-    constructor(public service: TestService<TestModel>) {}
+    constructor(public repository: TestService<TestModel>) {}
 
     @UseInterceptors(CrudRequestInterceptor)
     @Get('normal/:id')
@@ -82,7 +82,7 @@ describe('#crud', () => {
   })
   @Controller('test3')
   class Test3Controller {
-    constructor(public service: TestService<TestModel>) {}
+    constructor(public repository: TestService<TestModel>) {}
 
     @Override('getManyBase')
     get(@ParsedRequest() req: CrudRequest) {
@@ -103,7 +103,7 @@ describe('#crud', () => {
   })
   @Controller('test4')
   class Test4Controller {
-    constructor(public service: TestService<TestModel>) {}
+    constructor(public repository: TestService<TestModel>) {}
 
     @Override('getManyBase')
     get(@ParsedRequest() req: CrudRequest) {
@@ -120,7 +120,7 @@ describe('#crud', () => {
   })
   @Controller('test5')
   class Test5Controller {
-    constructor(public service: TestService<TestModel>) {}
+    constructor(public repository: TestService<TestModel>) {}
   }
 
   let $: supertest.SuperTest<supertest.Test>;

@@ -87,7 +87,7 @@ We believe that everyone who's working with NestJs and building some RESTful ser
 
 - [**@lab3dvlp/crud**](https://www.npmjs.com/package/@lab3dvlp/crud) - core package which provides `@Crud()` decorator for endpoints generation, global configuration, validation, helper decorators ([docs](https://github.com/dataui/crud/wiki/Controllers#description))
 - [**@lab3dvlp/crud-request**](https://www.npmjs.com/package/@lab3dvlp/crud-request) - request builder/parser package which provides `RequestQueryBuilder` class for a frontend usage and `RequestQueryParser` that is being used internally for handling and validating query/path params on a backend side ([docs](https://github.com/dataui/crud/wiki/Requests#frontend-usage))
-- [**@lab3dvlp/crud-typeorm**](https://www.npmjs.com/package/@lab3dvlp/crud-typeorm) - TypeORM package which provides base `TypeOrmCrudService` with methods for CRUD database operations ([docs](https://github.com/dataui/crud/wiki/ServiceTypeorm))
+- [**@lab3dvlp/crud-typeorm**](https://www.npmjs.com/package/@lab3dvlp/crud-typeorm) - TypeORM package which provides base `TypeOrmCrudRepository` with methods for CRUD database operations ([docs](https://github.com/dataui/crud/wiki/ServiceTypeorm))
 
 ## Documentation
 

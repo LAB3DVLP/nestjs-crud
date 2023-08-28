@@ -25,5 +25,5 @@ import { serialize } from './response';
 @ApiTags('devices')
 @Controller('/devices')
 export class DevicesController {
-  constructor(public service: DevicesService) {}
+  constructor(public repository: DevicesService) {}
 }

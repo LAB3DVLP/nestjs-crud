@@ -46,7 +46,7 @@ import { UsersService } from './users.service';
 @ApiTags('users')
 @Controller('/companies/:companyId/users')
 export class UsersController implements CrudController<User> {
-  constructor(public service: UsersService) {}
+  constructor(public repository: UsersService) {}
 
   get base(): CrudController<User> {
     return this;

@@ -18,5 +18,5 @@ import { serialize } from './responses';
 @ApiTags('notes')
 @Controller('/notes')
 export class NotesController {
-  constructor(public service: NotesService) {}
+  constructor(public repository: NotesService) {}
 }

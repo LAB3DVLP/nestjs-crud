@@ -53,7 +53,7 @@ describe('#crud', () => {
     })
     @Controller('test')
     class GlobalTestController {
-      constructor(public service: TestService<TestModel>) {}
+      constructor(public repository: TestService<TestModel>) {}
     }
 
     @Crud({
@@ -82,7 +82,7 @@ describe('#crud', () => {
     })
     @Controller('test2')
     class GlobalTestController2 {
-      constructor(public service: TestService<TestModel>) {}
+      constructor(public repository: TestService<TestModel>) {}
     }
 
     beforeAll(async () => {

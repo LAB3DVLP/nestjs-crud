@@ -39,7 +39,7 @@ describe('#crud', () => {
     })
     @Controller('test')
     class TestController implements CrudController<TestModel> {
-      constructor(public service: TestService<TestModel>) {}
+      constructor(public repository: TestService<TestModel>) {}
 
       get base(): CrudController<TestModel> {
         return this;

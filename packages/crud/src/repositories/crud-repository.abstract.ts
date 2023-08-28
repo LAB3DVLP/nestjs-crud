@@ -10,7 +10,7 @@ import {
   QueryOptions,
 } from '../interfaces';
 
-export abstract class CrudService<T, DTO = T> {
+export abstract class CrudRepository<T, DTO = T> {
   abstract getMany(req: CrudRequest): Promise<GetManyDefaultResponse<T> | T[]>;
 
   abstract getOne(req: CrudRequest): Promise<T>;

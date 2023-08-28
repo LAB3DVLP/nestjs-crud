@@ -216,49 +216,49 @@ export class CrudRoutesFactory {
 
   protected getManyBase(name: BaseRouteName) {
     this.targetProto[name] = function getManyBase(req: CrudRequest) {
-      return this.service.getMany(req);
+      return this.repository.getMany(req);
     };
   }
 
   protected getOneBase(name: BaseRouteName) {
     this.targetProto[name] = function getOneBase(req: CrudRequest) {
-      return this.service.getOne(req);
+      return this.repository.getOne(req);
     };
   }
 
   protected createOneBase(name: BaseRouteName) {
     this.targetProto[name] = function createOneBase(req: CrudRequest, dto: any) {
-      return this.service.createOne(req, dto);
+      return this.repository.createOne(req, dto);
     };
   }
 
   protected createManyBase(name: BaseRouteName) {
     this.targetProto[name] = function createManyBase(req: CrudRequest, dto: any) {
-      return this.service.createMany(req, dto);
+      return this.repository.createMany(req, dto);
     };
   }
 
   protected updateOneBase(name: BaseRouteName) {
     this.targetProto[name] = function updateOneBase(req: CrudRequest, dto: any) {
-      return this.service.updateOne(req, dto);
+      return this.repository.updateOne(req, dto);
     };
   }
 
   protected replaceOneBase(name: BaseRouteName) {
     this.targetProto[name] = function replaceOneBase(req: CrudRequest, dto: any) {
-      return this.service.replaceOne(req, dto);
+      return this.repository.replaceOne(req, dto);
     };
   }
 
   protected deleteOneBase(name: BaseRouteName) {
     this.targetProto[name] = function deleteOneBase(req: CrudRequest) {
-      return this.service.deleteOne(req);
+      return this.repository.deleteOne(req);
     };
   }
 
   protected recoverOneBase(name: BaseRouteName) {
     this.targetProto[name] = function recoverOneBase(req: CrudRequest) {
-      return this.service.recoverOne(req);
+      return this.repository.recoverOne(req);
     };
   }
 

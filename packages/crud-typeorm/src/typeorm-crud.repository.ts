@@ -2,7 +2,7 @@ import {
   CreateManyDto,
   CrudRequest,
   CrudRequestOptions,
-  CrudService,
+  CrudRepository,
   CustomOperators,
   GetManyDefaultResponse,
   JoinOption,
@@ -51,7 +51,7 @@ interface IAllowedRelation {
   allowedColumns: string[];
 }
 
-export class TypeOrmCrudService<T> extends CrudService<T, DeepPartial<T>> {
+export class TypeOrmCrudRepository<T> extends CrudRepository<T, DeepPartial<T>> {
   protected dbName: DataSourceOptions['type'];
   protected entityColumns: string[];
   protected entityPrimaryColumns: string[];
@@ -379,7 +379,7 @@ export class TypeOrmCrudService<T> extends CrudService<T, DeepPartial<T>> {
 
   /**
    * depends on paging call `SelectQueryBuilder#getMany` or `SelectQueryBuilder#getManyAndCount`
-   * helpful for overriding `TypeOrmCrudService#getMany`
+   * helpful for overriding `TypeOrmCrudRepository#getMany`
    * @see getMany
    * @see SelectQueryBuilder#getMany
    * @see SelectQueryBuilder#getManyAndCount

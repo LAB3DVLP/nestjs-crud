@@ -1,8 +1,8 @@
 import { CreateManyDto, CrudRequest, GetManyDefaultResponse } from '../interfaces';
-import { CrudService } from '../services';
+import { CrudRepository } from '../repositories';
 
 export interface CrudController<T> {
-  service: CrudService<T>;
+  repository: CrudRepository<T>;
   getManyBase?(req: CrudRequest): Promise<GetManyDefaultResponse<T> | T[]>;
   getOneBase?(req: CrudRequest): Promise<T>;
   createOneBase?(req: CrudRequest, dto: T): Promise<T>;

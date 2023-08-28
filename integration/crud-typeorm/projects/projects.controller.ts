@@ -33,5 +33,5 @@ import { ProjectsService } from './projects.service';
 @ApiTags('projects')
 @Controller('/companies/:companyId/projects')
 export class ProjectsController {
-  constructor(public service: ProjectsService) {}
+  constructor(public repository: ProjectsService) {}
 }

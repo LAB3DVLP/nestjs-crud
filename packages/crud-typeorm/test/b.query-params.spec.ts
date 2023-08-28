@@ -42,7 +42,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('companies')
     class CompaniesController {
-      constructor(public service: CompaniesService) {}
+      constructor(public repository: CompaniesService) {}
     }
 
     @Crud({
@@ -68,7 +68,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('projects')
     class ProjectsController {
-      constructor(public service: ProjectsService) {}
+      constructor(public repository: ProjectsService) {}
     }
 
     @Crud({
@@ -76,7 +76,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('projects2')
     class ProjectsController2 {
-      constructor(public service: ProjectsService) {}
+      constructor(public repository: ProjectsService) {}
     }
 
     @Crud({
@@ -87,7 +87,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('projects3')
     class ProjectsController3 {
-      constructor(public service: ProjectsService) {}
+      constructor(public repository: ProjectsService) {}
     }
 
     @Crud({
@@ -109,7 +109,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('projects4')
     class ProjectsController4 {
-      constructor(public service: ProjectsService) {}
+      constructor(public repository: ProjectsService) {}
     }
 
     @Crud({
@@ -130,7 +130,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('users')
     class UsersController {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -146,7 +146,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('users2')
     class UsersController2 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -163,7 +163,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('myusers')
     class UsersController3 {
-      constructor(public service: UsersService2) {}
+      constructor(public repository: UsersService2) {}
     }
 
     @Crud({
@@ -171,7 +171,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('notes')
     class NotesController {
-      constructor(public service: NotesService) {}
+      constructor(public repository: NotesService) {}
     }
 
     beforeAll(async () => {

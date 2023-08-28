@@ -36,7 +36,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('companies0')
     class CompaniesController0 {
-      constructor(public service: CompaniesService) {}
+      constructor(public repository: CompaniesService) {}
     }
 
     beforeAll(async () => {
@@ -90,7 +90,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('companies')
     class CompaniesController {
-      constructor(public service: CompaniesService) {}
+      constructor(public repository: CompaniesService) {}
     }
 
     beforeAll(async () => {
@@ -175,7 +175,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('companies')
     class CompaniesController {
-      constructor(public service: CompaniesService) {}
+      constructor(public repository: CompaniesService) {}
     }
 
     @Crud({
@@ -206,7 +206,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('companies/:companyId/users')
     class UsersController {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -222,7 +222,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('/users2')
     class UsersController2 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -237,7 +237,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('/users3')
     class UsersController3 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -249,7 +249,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('users4')
     class UsersController4 {
-      constructor(public service: UsersService) {}
+      constructor(public repository: UsersService) {}
     }
 
     @Crud({
@@ -269,7 +269,7 @@ describe('#crud-typeorm', () => {
     })
     @Controller('devices')
     class DevicesController {
-      constructor(public service: DevicesService) {}
+      constructor(public repository: DevicesService) {}
     }
 
     beforeAll(async () => {

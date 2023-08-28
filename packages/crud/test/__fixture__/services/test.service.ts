@@ -3,10 +3,10 @@ import { ParsedRequestParams } from '@lab3dvlp/crud-request';
 import { CrudRequestOptions } from '../../../src/interfaces';
 
 import { CreateManyDto, CrudRequest } from '../../../src/interfaces';
-import { CrudService } from '../../../src/services';
+import { CrudRepository } from '../../../src/repositories';
 
 @Injectable()
-export class TestService<T> extends CrudService<T> {
+export class TestService<T> extends CrudRepository<T> {
   async getMany(req: CrudRequest): Promise<any> {
     return { req };
   }

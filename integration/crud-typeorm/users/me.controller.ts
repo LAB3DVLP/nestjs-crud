@@ -38,5 +38,5 @@ import { UsersService } from './users.service';
 @ApiTags('me')
 @Controller('me')
 export class MeController {
-  constructor(public service: UsersService) {}
+  constructor(public repository: UsersService) {}
 }

@@ -3,7 +3,7 @@ import { BadRequestException, NotFoundException } from '@nestjs/common';
 import { TestService } from './__fixture__/services';
 
 describe('#crud', () => {
-  describe('#CrudService', () => {
+  describe('#CrudRepository', () => {
     let service: TestService<any>;
 
     beforeAll(() => {

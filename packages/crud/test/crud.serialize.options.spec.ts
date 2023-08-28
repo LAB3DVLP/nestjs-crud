@@ -39,7 +39,7 @@ describe('#crud', () => {
     })
     @Controller('test')
     class TestController {
-      constructor(@Inject(SERVICE_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE_TOKEN) public repository: TestSerializeService) {}
     }
 
     @Crud({
@@ -60,7 +60,7 @@ describe('#crud', () => {
     })
     @Controller('test2')
     class Test2Controller {
-      constructor(@Inject(SERVICE2_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE2_TOKEN) public repository: TestSerializeService) {}
     }
 
     @Crud({
@@ -74,7 +74,7 @@ describe('#crud', () => {
     })
     @Controller('test3')
     class Test3Controller implements CrudController<TestSerialize2Model> {
-      constructor(@Inject(SERVICE2_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE2_TOKEN) public repository: TestSerializeService) {}
 
       get base(): CrudController<TestSerialize2Model> {
         return this;
@@ -96,7 +96,7 @@ describe('#crud', () => {
     })
     @Controller('test4')
     class Test4Controller {
-      constructor(@Inject(SERVICE2_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE2_TOKEN) public repository: TestSerializeService) {}
     }
 
     @Crud({
@@ -115,7 +115,7 @@ describe('#crud', () => {
     })
     @Controller('test5')
     class Test5Controller {
-      constructor(@Inject(SERVICE2_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE2_TOKEN) public repository: TestSerializeService) {}
     }
 
     @Crud({
@@ -137,7 +137,7 @@ describe('#crud', () => {
     })
     @Controller('test6')
     class Test6Controller {
-      constructor(@Inject(SERVICE_TOKEN) public service: TestSerializeService) {}
+      constructor(@Inject(SERVICE_TOKEN) public repository: TestSerializeService) {}
     }
 
     beforeAll(async () => {
