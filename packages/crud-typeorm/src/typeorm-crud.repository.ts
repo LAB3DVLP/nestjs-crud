@@ -222,7 +222,8 @@ export class TypeOrmCrudRepository<T> extends CrudRepository<T, DeepPartial<T>> 
    * @param req
    * @param dto
    */
-  public async replaceOne(req: CrudRequest, dto: DeepPartial<T>): Promise<T> {
+  public async replaceOne(req: CrudRequest, dto: DeepPartial<T>, replaceEntity = false): Promise<T> {
+  if(!replaceEntity) return this.updateOne(req, dto);
     const { allowParamsOverride, returnShallow } = req.options.routes.replaceOneBase;
     const paramsFilters = this.getParamFilters(req.parsed);
     // disable cache while replacing
