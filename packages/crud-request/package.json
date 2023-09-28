@@ -1,7 +1,7 @@
 {
   "name": "@lab3dvlp/crud-request",
   "description": "NestJs CRUD for RESTful APIs - request query builder",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -48,7 +48,7 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@lab3dvlp/crud-util": "^8.0.0",
+    "@lab3dvlp/crud-util": "^8.0.1",
     "qs": "^6.8.0"
   },
   "gitHead": "d6558967db3897a92802b3404530887bcb0eacaa"
