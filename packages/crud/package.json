@@ -1,7 +1,7 @@
 {
   "name": "@lab3dvlp/crud",
   "description": "NestJs CRUD for RESTful APIs",
-  "version": "8.0.3",
+  "version": "8.0.2",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -40,8 +40,8 @@
     "build": "npx tsc -b"
   },
   "dependencies": {
-    "@lab3dvlp/crud-request": "^8.0.3",
-    "@lab3dvlp/crud-util": "^8.0.3",
+    "@lab3dvlp/crud-request": "^8.0.2",
+    "@lab3dvlp/crud-util": "^8.0.2",
     "deepmerge": "^3.2.0",
     "pluralize": "^8.0.0"
   },
