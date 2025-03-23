@@ -1,7 +1,7 @@
 {
   "name": "@lab3dvlp/crud-util",
   "description": "NestJs CRUD for RESTful APIs - util",
-  "version": "8.0.2",
+  "version": "8.0.3",
   "license": "MIT",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
